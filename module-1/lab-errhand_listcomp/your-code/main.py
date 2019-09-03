@@ -9,43 +9,50 @@ print(my_listComprehension)
 #Insert here the module/library import statements 
 
 
-
+import statements
 
 #1. Calculate the square number of the first 20 numbers. Use square as the name of the list.
 # Remember to use list comprehensions and to print your results
 
-
+numbers = list(range(1,21))
+numbers_square = [i**2 for i in numbers]
+print(numbers_square)
 
 
 #2. Calculate the first 50 power of two. Use power_of_two as the name of the list.
 # Remember to use list comprehensions and to print your results
 
-
+power_of_two = [2**i for i in range(50)]
+print(power_of_two)
 
 
 #3. Calculate the square root of the first 100 numbers. Use sqrt as the name of the list.
 # You will probably need to install math library with pip and import it in this file.  
 # Remember to use list comprehensions and to print your results
-
-
+import math
+from math import sqrt
+root = [math.sqrt(i) for i in range(100)]
 
 
 #4. Create this list [-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0]. Use my_list as the name of the list.
 # Remember to use list comprehensions and to print your results
 
+my_list = list(range(-10,1))
+print(my_list)
 
 
 
 #5. Find the odd numbers from 1-100. Use odds as the name of the list. 
 # Remember to use list comprehensions and to print your results
 
-
+odds = list(range(1,101,2)
 
 
 #6. Find all of the numbers from 1-1000 that are divisible by 7. Use divisible_by_seven as the name of the list.
 # Remember to use list comprehensions and to print your results
 
-
+divisible_by_seven = [x for x in range(1,1001) if x % 7 == 0]
+print(divisible_by_seven)
 
 
 #7. Remove all of the vowels in a string. Hint: make a list of the non-vowels. Use non_vowels as the name of the list.
