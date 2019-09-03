@@ -60,7 +60,9 @@ print(divisible_by_seven)
 # You can use the following test string but feel free to modify at your convenience
 
 teststring = 'Find all of the words in a string that are monosyllabic'
-
+palabra = "monosyllabic"
+non_vowels = [e for e in palabra if e not in ["a","e","i","o","u"]]
+print(non_vowels)
 
 
 
@@ -68,7 +70,9 @@ teststring = 'Find all of the words in a string that are monosyllabic'
 # Use capital_letters as the name of the list.  
 # Remember to use list comprehensions and to print your results
 
-
+sentence = 'The Quick Brown Fox Jumped Over The Lazy Dog'
+capital = [ele for ele in sentence if ele.isupper()]
+print(capital)
 
 
 #9. Find all the consonants in the sentence 'The quick brown fox jumped over the lazy dog'.
