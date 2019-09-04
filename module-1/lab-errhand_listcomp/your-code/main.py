@@ -79,8 +79,10 @@ print(capital)
 # Use consonants as the name of the list.
 # Remember to use list comprehensions and to print your results.
 
-
-
+vocales = "a","e","i","o","u", " "
+cadena = 'The quick brown fox jumped over the lazy dog'
+new_cadena = [letra for letra in cadena if not(letra.lower() in vocales)]
+print(new_cadena)
 
 
 #10. Find the folders you have in your madrid-oct-2018 local repo. Use files as name of the list.  
